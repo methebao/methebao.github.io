@@ -133,28 +133,39 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  min-height: 900px;
   background-color: #33ba9c;
 }
+header h1 {
+  font-size: 4em;
+}
 .header-wrapper {
+  margin-top: 8em;
   display: flex;
-  margin: auto;
-  padding: 2em;
+  padding: 1em;
 }
 .header-featured-img {
   text-align: center;
 }
 .header-featured-img img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
 }
 .description {
+  margin-top: 3em;
   color: #fff;
 }
 
 .description p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.7;
+}
+.field-list {
+  list-style: none;
+}
+.field-list li {
+  font-size: 1.2em;
 }
 .description button {
   color: #fff;
@@ -182,24 +193,28 @@ header {
   opacity: 0.8;
 }
 .about span {
+  font-size: 1.2em;
+  font-style: italic;
   margin-top: 4px;
+
   display: block;
   color: #2e3e4e;
   text-align: center;
 }
 .about .brief {
-  padding: 2em;
+  padding: 4em 1.5em;
   border-left: 4px solid #42d1b2;
 }
 .about .brief h3 {
+  font-size: 1.5em;
   display: block;
   padding: 0.5em 1.5em;
-  border: 1px solid #42d1b2;
   color: rgba(255, 255, 255, 0.815);
   background: #33ba9c;
 }
 .about .brief p {
   line-height: 2;
+  font-size: 1.1em;
 }
 .requirements-list {
   list-style: none;
@@ -207,14 +222,13 @@ header {
 }
 .requirements-list li:before {
   position: relative;
-
   top: -0.1em;
   display: inline-block;
   padding: 0 0.25em;
   content: "\f111";
   font-family: "Font Awesome 5 Free";
   font-weight: 100;
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 /*------------------------------------*/
 /* Portfolio */
@@ -328,5 +342,5 @@ footer li a:active {
 }
 .social-links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
