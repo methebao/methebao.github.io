@@ -138,7 +138,7 @@ header {
   background-color: #33ba9c;
 }
 header h1 {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 .header-wrapper {
   margin-top: 8em;
@@ -163,17 +163,18 @@ header h1 {
 }
 .field-list {
   list-style: none;
+  color: #2e3e4e;
 }
 .field-list li {
   font-size: 1.2em;
 }
-.description button {
+.more-button {
   color: #fff;
   background-color: #2e3e4e;
-  border: 1px solid #33ba9c;
+  border: none;
 }
-.description button:hover,
-.description button:active {
+.more-button:hover,
+.more-button:active {
   color: #33ba9c;
   background-color: #2e3e4e;
 }
