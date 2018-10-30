@@ -1,9 +1,0 @@
-{
-  "root": "/",
-  "encoding": "UTF-8",
-  "routes": {
-    "/*.html": "index.html",
-    "/projects/**": "projects/ivy/index.html",
-    "/projects/**": "projects/natoursindex.html"
-  }
-}

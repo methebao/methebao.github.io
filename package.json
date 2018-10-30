@@ -1,23 +1,22 @@
 {
-  "name": "thebaodev.me",
+  "name": "thebaodev",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "serve": "^10.0.1"
-  },
-  "devDependencies": {},
   "scripts": {
-    "start": "serve"
+    "start": "node web-server/app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/methebao/methebao.github.io.git"
   },
-  "author": "TheBaoDev",
+  "author": "The Bao",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/methebao/methebao.github.io/issues"
   },
-  "homepage": "https://github.com/methebao/methebao.github.io#readme"
+  "homepage": "https://github.com/methebao/methebao.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
