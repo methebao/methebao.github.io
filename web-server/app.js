@@ -5,7 +5,7 @@ var express = require("express"),
 //set the port
 const port = process.env.PORT || 5000;
 
-app.set("port", $PORT);
+app.set("port", port);
 
 //tell express that we want to use the www folder
 //for our static assets
