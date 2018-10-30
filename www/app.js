@@ -7,7 +7,15 @@ app.set("port", 3000);
 
 //tell express that we want to use the www folder
 //for our static assets
-app.use(express.static(path.join(__dirname, "../www")));
+app.use("/", express.static(path.join(__dirname, "../www")));
+app.use(
+  "/projects/ivy",
+  express.static(path.join(__dirname, "../www/projects/ivyfood"))
+);
+app.use(
+  "/projects/natours",
+  express.static(path.join(__dirname, "../www/projects/natours"))
+);
 
 // Listen for requests
 var server = app.listen(app.get("port"), function() {
