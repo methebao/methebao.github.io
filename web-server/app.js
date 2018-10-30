@@ -3,13 +3,19 @@ var express = require("express"),
   app = express();
 
 //set the port
-app.set("port", 3000);
+const port = process.env.PORT || 5000;
+
+app.set("port", $PORT);
 
 //tell express that we want to use the www folder
 //for our static assets
 app.use("/", express.static(path.join(__dirname, "../www")));
 app.use(
   "/projects/ivy",
+  express.static(path.join(__dirname, "../www/projects/ivyfood"))
+);
+app.use(
+  "/projects/ivy/",
   express.static(path.join(__dirname, "../www/projects/ivyfood"))
 );
 app.use(
