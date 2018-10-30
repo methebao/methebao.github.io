@@ -14,7 +14,9 @@
   ],
   "author": "The Bao",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "serve": "^10.0.2"
+  },
   "devDependencies": {
     "node-sass": "^4.9.4"
   }
