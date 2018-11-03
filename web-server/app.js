@@ -11,6 +11,7 @@ app.set("port", port);
 //for our static assets
 app.use("/", express.static(path.join(__dirname, "../www")));
 app.use(
+<<<<<<< HEAD
   "/projects/ivy",
   express.static(path.join(__dirname, "../www/projects/ivyfood"))
 );
@@ -18,6 +19,12 @@ app.use(
   "/projects/ivy/",
   express.static(path.join(__dirname, "../www/projects/ivyfood"))
 );
+=======
+  "/projects/ivyfood",
+  express.static(path.join(__dirname, "../www/projects/ivyfood"))
+);
+
+>>>>>>> natours-dev
 app.use(
   "/projects/natours",
   express.static(path.join(__dirname, "../www/projects/natours"))
