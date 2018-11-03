@@ -11,7 +11,7 @@ app.set("port", port);
 //for our static assets
 app.use("/", express.static(path.join(__dirname, "../www")));
 app.use(
-  "/projects/ivy",
+  "/projects/ivyfood",
   express.static(path.join(__dirname, "../www/projects/ivyfood"))
 );
 
